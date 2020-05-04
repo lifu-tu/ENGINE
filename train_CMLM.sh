@@ -1,0 +1,3 @@
+
+
+CUDA_VISIBLE_DEVICES=0 python train.py   PATH_YOUR_OUTPUT/iwslt14deen_beam5 --arch bert_transformer_seq2seq  --no-epoch-checkpoints  --keep-best-checkpoints 5  --criterion label_smoothed_length_cross_entropy --label-smoothing 0.1 --lr 5e-4 --warmup-init-lr 1e-7 --min-lr 1e-9 --lr-scheduler inverse_sqrt --warmup-updates 10000 --optimizer adam --adam-betas '(0.9, 0.999)' --adam-eps 1e-6 --task translation_self --max-tokens 4096  --update-freq 4     --weight-decay 0.01 --dropout 0.3 --encoder-layers 6 --encoder-embed-dim 512 --decoder-layers 6 --decoder-embed-dim 512 --fp16 --max-source-positions 10000 --max-target-positions 10000 --max-update 300000 --seed 0 --save-dir cmlmiwslt_beam5_4

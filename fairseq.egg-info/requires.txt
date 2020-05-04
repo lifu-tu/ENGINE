@@ -1,0 +1,6 @@
+cffi
+numpy
+sacrebleu
+torch
+tqdm
+gdown
