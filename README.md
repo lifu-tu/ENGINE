@@ -12,7 +12,7 @@ We propose to train a non-autoregressive machine translation model to minimize t
 
 The pretrained AR (autogressive) transformer models, the dictionaries and [CMLM](https://github.com/facebookresearch/Mask-Predict) (conditional masked language models) could be download. These models are used for **[ENGINE](https://ttic.uchicago.edu/~lifu/papers/ENGINE.pdf)** training. By the way, the scripts to train these model are also provides in the end.
 
-And let me know if you are interested in the **ENGINE** by myself. I do not share the models because of disk space limitation.
+And let me know if you are interested in the **ENGINE** trained in the paper. I do not share the models here because of disk space limitation.
 
 * **IWSLT14 German-English**
 ```
@@ -88,3 +88,18 @@ For any issues or thoughts about **ENGINE** in the Github, please contact Lifu T
 
 ## To-do 
 The code version of [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) for **ENGINE** will be also provide soon.
+
+
+##References
+```
+@inproceedings{tu-2020-nat,
+    title = {{ENGINE}: Energy-Based Inference Networks for Non-Autoregressive Machine Translation},
+    author = "Tu, Lifu and Pang, Richard Yuanzhe and Wiseman, Sam and Gimpel, Kevin",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    year = "2020",
+    publisher = "Association for Computational Linguistics",
+}
+```
+
+
+
