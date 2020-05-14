@@ -1,6 +1,6 @@
 # ENGINE
 
-Code to train model from "[ENGINE:Energy-Based Inference Networks for Non-Autoregressive Machine Translation](https://ttic.uchicago.edu/~lifu/papers/ENGINE.pdf)", accept by ACL2020. Our code is based on the code of [Mask-Predict](https://github.com/facebookresearch/Mask-Predict) from Facebook AI Research.
+Code to train model from "[ENGINE:Energy-Based Inference Networks for Non-Autoregressive Machine Translation](https://arxiv.org/abs/2005.00850)", accept by ACL2020. Our code is based on the code of [Mask-Predict](https://github.com/facebookresearch/Mask-Predict) from Facebook AI Research.
 
 <p align="center">
  <img src="images/ENGINE.png" width="500"/>
@@ -10,9 +10,9 @@ We propose to train a non-autoregressive machine translation model to minimize t
 
 ## Download models 
 
-The pretrained AR (autogressive) transformer models, the dictionaries and [CMLM](https://github.com/facebookresearch/Mask-Predict) (conditional masked language models) could be download. These models are used for **[ENGINE](https://ttic.uchicago.edu/~lifu/papers/ENGINE.pdf)** training. By the way, the scripts to train these model are also provides in the end.
+The pretrained AR (autogressive) transformer models, the dictionaries and [CMLM](https://github.com/facebookresearch/Mask-Predict) (conditional masked language models) could be download. These models are used for **[ENGINE](https://arxiv.org/abs/2005.00850)** training. By the way, the scripts to train these model are also provides in the end.
 
-And let me know if you are interested in the **ENGINE** trained in the paper. I do not share the models here because of disk space limitation.
+And let me know if you are interested in the **ENGINE** models trained in the paper. I do not share the models here because of disk space limitation.
 
 * **IWSLT14 German-English**
 ```
@@ -64,7 +64,7 @@ python train_inf.py   \
 
 
 ## Evaluation
-one decoding iteration is used (meaning the methods are purely non-autoregressive)
+one decoding iteration is used ( meaning the methods are purely non-autoregressive )
 ```
 python generate_cmlm.py ${output_dir}/data-bin  --path ${model_dir}/checkpoint_best.pt  --task translation_self --remove-bpe --max-sentences 20 --decoding-iterations 1  --decoding-strategy mask_predict
 ```
@@ -72,9 +72,9 @@ python generate_cmlm.py ${output_dir}/data-bin  --path ${model_dir}/checkpoint_b
 
 ## Others
 
-The following scrips could be used to train your own models: the pretrained AR(autogressive) transformer models and CMLM.
-#### Train transformer AR(autogressive) energy models
-You could use the script `train_AR_Energy.sh` or `train_iwslt_AR_Energy.sh` to train your owm transformer AR(autogressive) energy models.
+The following scrips could be used to train your own models: the pretrained AR( autogressive ) transformer models and CMLM.
+#### Train transformer AR(autogressive) energy models 
+You could use the script `train_AR_Energy.sh` or `train_iwslt_AR_Energy.sh` to train your owm transformer AR( autogressive ) energy models.
 
 
 #### Train CMLM (conditional masked language models)
@@ -87,7 +87,7 @@ For any issues or thoughts about **ENGINE** in the Github, please contact Lifu T
 
 
 ## To-do 
-The code version of [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) for **ENGINE** will be also provide soon.
+The code version of [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) for **ENGINE** will be also provided soon.
 
 
 ## References
