@@ -14,13 +14,15 @@ The pretrained AR (autogressive) transformer models, the dictionaries and [CMLM]
 
 And let me know if you are interested in the **ENGINE** models trained in the paper. I do not share the models here because of disk space limitation.
 
+With the following commands, we can download the pretrained autoregressive model and CMLM model that used in this paper.
+
 * **IWSLT14 German-English**
 ```
 wget https://ttic.uchicago.edu/~lifu/ENGINE_IWSLT14DEEN.zip 
 ```
 
 
-* **IWSLT14 German-English**
+* **WMT16 Romanian-English**
 ```
 wget https://ttic.uchicago.edu/~lifu/ENGINE_WMT16ROEN.zip
 ```
